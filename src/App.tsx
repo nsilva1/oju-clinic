@@ -1,18 +1,27 @@
-import { useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0);
+import Header from './components/common/Header';
+import NavBar  from './components/common/NavBar';
+import Footer from './components/common/Footer';
+import Body from './components/common/Body';
+import Footer2 from './components/common/footer2';
+ 
+
+
+const App = () =>{
+  
 
   return (
-    <div className='flex flex-col justify-center items-center'>
-      <h1 className='font-semibold text-3xl m-5'>Counter</h1>
-      <p className='font-medium text-2xl'>Current count: {count}</p>
-      <button
-        className='btn-primary rounded-full p-2 m-3'
-        onClick={() => setCount(count + 1)}
-      >
-        Increment
-      </button>
+    <div className='w-[100%] m-auto bg-white'>
+
+      <Header />
+      <NavBar />
+      <Body />
+      <Footer />
+      <Footer2 />
+      
+      
+      
+
     </div>
   );
 }
