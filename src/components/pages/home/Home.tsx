@@ -1,3 +1,5 @@
+import ChooseUs from './ChooseUs';
+
 const Home = () => {
   return (
     <div>
@@ -20,6 +22,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ChooseUs />
     </div>
   );
 };
