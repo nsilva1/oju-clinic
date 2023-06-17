@@ -33,11 +33,6 @@ li:hover::before{
 
 }
 
-.osondu{
-    justify-content: center;
-}
-
-
 .dropdown:hover::before{
   position: absolute;
   content: '';

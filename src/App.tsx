@@ -1,8 +1,8 @@
 
 import Header from './components/common/Header';
 import NavBar  from './components/common/NavBar';
+import Home from './components/pages/home/Home';
 import Footer from './components/common/Footer';
-import Body from './components/common/Body';
 import Footer2 from './components/common/footer2';
  
 
@@ -15,7 +15,7 @@ const App = () =>{
 
       <Header />
       <NavBar />
-      <Body />
+      <Home />
       <Footer />
       <Footer2 />
       
