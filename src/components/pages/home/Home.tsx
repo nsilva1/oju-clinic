@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Home = () => {
   return (
     <div>
@@ -12,7 +10,12 @@ const Home = () => {
                 Book Your appointment today!{' '}
               </h1>
               <p className='mb-5'>With your local optician and audiologist.</p>
-              <button className='btn btn-primary'>Book an eye test</button>
+              <button className='btn btn-accent rounded-full m-2'>
+                Book an eye test
+              </button>
+              <button className='btn btn-primary rounded-full m-2'>
+                Book a hearing test
+              </button>
             </div>
           </div>
         </div>

@@ -193,7 +193,7 @@ const NavBar = () => {
           </div>
         </div>
         <div className='navbar-end'>
-          <button className='btn normal-case text-white bg-[#b5f44a] hover:bg-white hover:text-brand text-[18px]'>
+          <button className='btn normal-case text-white bg-[#b5f44a] hover:bg-white hover:text-brand text-[18px] rounded-full'>
             <h2>Book Appointment</h2>
           </button>
         </div>
