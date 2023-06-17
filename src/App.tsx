@@ -12,16 +12,10 @@ const App = () =>{
 
   return (
     <div className='w-[100%] m-auto bg-white'>
-
-      <Header />
       <NavBar />
       <Home />
       <Footer />
       <Footer2 />
-      
-      
-      
-
     </div>
   );
 }

@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div>
       <div className='navbar bg-base-100'>
-        <div className='navbar-start font-semibold'>
+        <div className='navbar-start font-semibold hidden md:flex'>
           <IoIosPin className='mr-2' /> Find a store
         </div>
 
@@ -15,7 +15,7 @@ const Header = () => {
           <img src={oju_clinic} alt='Company Logo' className='w-28 h-28' />
         </div>
 
-        <div className='navbar-end'>
+        <div className='navbar-end hidden md:flex'>
           <button className='btn btn-ghost'>Log in</button>
           <button className='btn btn-ghost btn-circle'>
             <AiFillHeart className='text-[80%] text-black hover:text-blueColorsicon' />
