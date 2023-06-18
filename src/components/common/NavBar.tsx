@@ -45,11 +45,9 @@ const NavBar = () => {
 
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal px-1 '>
+            <li className='mx-3 text-[20px] text-black'>About us</li>
             <div className='dropdown dropdown-hover'>
-              <label
-                tabIndex={0}
-                className='mx-3 text-[20px] hover:bg-white text-black bg-white '
-              >
+              <label tabIndex={0} className='mx-3 text-[20px] text-black'>
                 Glasses
               </label>
               <ul
@@ -142,57 +140,63 @@ const NavBar = () => {
                 </li>
               </ul>
             </div>
-          </ul>
 
-          <div className='dropdown dropdown-hover'>
-            <label
-              tabIndex={0}
-              className='mx-3 text-[20px] hover:bg-white  text-black bg-white '
-            >
-              Hearing
-            </label>
-            <ul
-              tabIndex={0}
-              className='dropdown-content menu p-0 text-green-800 bg-base-500'
-            >
-              <li>
-                <a>
-                  <div>
-                    <footer className='footer p-10 bg-white  text-green-800 w-[40rem] h-[100%]'>
-                      <div>
-                        <strong className='footer-title'>Services</strong>
-                        <a className='link link-hover'>
-                          Book a free hearing test
-                        </a>
-                        <a className='link link-hover'>Hearing test</a>
-                        <a className='link link-hover'>Earwax removal</a>
-                        <a className='link link-hover'>Hearing aid aftercare</a>
-                        <a className='link link-hover'>
-                          Free online hearing test
-                        </a>
-                      </div>
-                      <div>
-                        <span className='footer-title'>
-                          What happens in a hearing test
-                        </span>
-                        <a className='link link-hover'>All about earwax</a>
-                        <a className='link link-hover'>All about ear health</a>
-                        <a className='link link-hover'>
-                          All about PRSI and Medical Cards
-                        </a>
-                        <a className='link link-hover'>
-                          Understanding hearing loss
-                        </a>
-                        <a className='link link-hover'>
-                          Download an information sheet
-                        </a>
-                      </div>
-                    </footer>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <div className='dropdown dropdown-hover'>
+              <label
+                tabIndex={0}
+                className='mx-3 text-[20px] hover:bg-white  text-black bg-white '
+              >
+                Hearing
+              </label>
+              <ul
+                tabIndex={0}
+                className='dropdown-content menu p-0 text-green-800 bg-base-500'
+              >
+                <li>
+                  <a>
+                    <div>
+                      <footer className='footer p-10 bg-white  text-green-800 w-[40rem] h-[100%]'>
+                        <div>
+                          <strong className='footer-title'>Services</strong>
+                          <a className='link link-hover'>
+                            Book a free hearing test
+                          </a>
+                          <a className='link link-hover'>Hearing test</a>
+                          <a className='link link-hover'>Earwax removal</a>
+                          <a className='link link-hover'>
+                            Hearing aid aftercare
+                          </a>
+                          <a className='link link-hover'>
+                            Free online hearing test
+                          </a>
+                        </div>
+                        <div>
+                          <span className='footer-title'>
+                            What happens in a hearing test
+                          </span>
+                          <a className='link link-hover'>All about earwax</a>
+                          <a className='link link-hover'>
+                            All about ear health
+                          </a>
+                          <a className='link link-hover'>
+                            All about PRSI and Medical Cards
+                          </a>
+                          <a className='link link-hover'>
+                            Understanding hearing loss
+                          </a>
+                          <a className='link link-hover'>
+                            Download an information sheet
+                          </a>
+                        </div>
+                      </footer>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <li className='mx-3 text-[20px] text-black'>Online store</li>
+          </ul>
         </div>
         <div className='navbar-end'>
           <button className='btn normal-case text-white bg-[#b5f44a] hover:bg-white hover:text-brand text-[18px] rounded-full'>
