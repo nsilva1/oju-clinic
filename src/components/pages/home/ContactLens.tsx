@@ -1,4 +1,3 @@
-import React from 'react';
 import { RiEye2Line } from 'react-icons/ri';
 
 const ContactLens = () => {

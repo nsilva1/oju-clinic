@@ -1,4 +1,3 @@
-import React from 'react';
 import ojuclinic_background from '../../assets/oju_clinic-bg.png';
 
 const Footer = () => {

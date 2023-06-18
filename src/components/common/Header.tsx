@@ -1,7 +1,7 @@
 import { AiFillHeart } from 'react-icons/ai';
 import { BsFillBagFill } from 'react-icons/bs';
 import oju_clinic from '../../assets/oju_clinic-bg.png';
-import { IoIosPin } from 'react-icons/io';
+
 
 const Header = () => {
   return (
