@@ -5,7 +5,7 @@ import Footer2 from './components/common/footer2';
 
 const App = () => {
   return (
-    <div className='w-[100%] m-auto bg-white'>
+    <div className='bg-white'>
       <NavBar />
       <Home />
       <Footer />

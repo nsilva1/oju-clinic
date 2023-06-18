@@ -21,16 +21,22 @@ const NavBar = () => {
               <img src={menu} alt='Mobile Menu' className='h-10 w-10' />
             </label>
             {toggle && (
-              <div className='p-6 bg-white absolute top-20 left-0 mx-4 my-2 min-w-[200px] rounded-xl sidebar'>
+              <div className='p-6 bg-white absolute top-20 left-0 mx-4 my-2 min-w-[200px] rounded-xl sidebar z-10'>
                 <ul
                   tabIndex={0}
                   className='list-none flex flex-col justify-end items-center flex-1'
                 >
+                  <li className='footer-title'>About Us</li>
                   <li className='footer-title'>Glasses</li>
                   <li className='footer-title'>Eye Test</li>
                   <li className='footer-title'>Hearing</li>
                   <li className='footer-title'>Log In</li>
                   <li className='footer-title'>Online Store</li>
+                  <li className='mt-3'>
+                    <button className='btn btn-neutral'>
+                      Book Appointment
+                    </button>
+                  </li>
                 </ul>
               </div>
             )}
@@ -62,19 +68,15 @@ const NavBar = () => {
                           <a className='link link-hover'>Men</a>
                           <a className='link link-hover'>Unisex</a>
                           <a className='link link-hover'>Kids</a>
-                          <a className='link link-hover'>
-                            Harry Potter Collection
-                          </a>
                         </div>
                         <div>
                           <span className='footer-title'>Type</span>
                           <a className='link link-hover'>Sunglasses</a>
-                          <a className='link link-hover'>designer lasses</a>
+                          <a className='link link-hover'>Designer glasses</a>
                           <a className='link link-hover'>Designer brands</a>
                           <a className='link link-hover'>
-                            Our glasses collection
+                            Our Locally manufactured Glasses collection
                           </a>
-                          <a className='link link-hover'>The LUXe Collection</a>
                         </div>
 
                         <div className='normal-case items-center menu'>

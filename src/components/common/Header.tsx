@@ -5,14 +5,14 @@ import { IoIosPin } from 'react-icons/io';
 
 const Header = () => {
   return (
-    <div>
+    <div className='hidden lg:block'>
       <div className='navbar bg-base-100'>
         <div className='navbar-start font-semibold hidden md:flex'>
-          <IoIosPin className='mr-2' /> Find a store
+          <h3 className='text-2xl italic'>Oju Eye Clinic</h3>
         </div>
 
         <div className='navbar-center'>
-          <img src={oju_clinic} alt='Company Logo' className='w-28 h-28' />
+          
         </div>
 
         <div className='navbar-end hidden md:flex'>

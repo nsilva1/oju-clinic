@@ -1,4 +1,5 @@
 import ChooseUs from './ChooseUs';
+import ContactLens from './ContactLens';
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
         </div>
       </div>
       <ChooseUs />
+      <ContactLens />
     </div>
   );
 };

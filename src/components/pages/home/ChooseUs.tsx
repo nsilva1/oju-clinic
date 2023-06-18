@@ -9,26 +9,26 @@ const ChooseUs = () => {
           Why Choose Oju Clinic
         </h4>
       </div>
-      <div className='flex flex-row justify-between items-center'>
-        <div className='flex flex-row bg-slate-100 rounded-xl p-8'>
+      <div className='flex flex-col md:flex-row'>
+        <div className='flex flex-row bg-slate-100 rounded-xl p-8 m-3'>
           <div className='text-4xl mr-3'>
             <BiGlasses />
           </div>
           <div>
-            <p>2 for 1 from 70,000 with insurance</p>
+            <p>2 for 1 Designer frames from 70,000. Members Only</p>
             <a className='text-success underline cursor-pointer'>Read more</a>
           </div>
         </div>
-        <div className='flex flex-row bg-slate-100 rounded-xl p-8'>
+        <div className='flex flex-row bg-slate-100 rounded-xl p-8 m-3'>
           <div className='text-4xl mr-3'>
             <BsEyeFill />
           </div>
           <div>
-            <p>Free eye test and glasses with insurance</p>
+            <p>Free eye test and glasses. Members Only</p>
             <a className='text-success underline cursor-pointer'>Read more</a>
           </div>
         </div>
-        <div className='flex flex-row bg-slate-100 rounded-xl p-8'>
+        <div className='flex flex-row bg-slate-100 rounded-xl p-8 m-3'>
           <div className='text-4xl mr-3'>
             <BsEar />
           </div>
