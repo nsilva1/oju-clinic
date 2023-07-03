@@ -1,9 +1,27 @@
 import React, { useState } from 'react';
+import {signInWithEmailAndPassword, signOut} from "firebase/auth";
+import {auth} from './Firebase-config';
 
 export const Login = (props: { onFormSwitch: (arg0: string) => void; }) => {
   const [email, setEmail] = useState('');
   const [pass, setPass] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const login = async () => {
+    try{
+    const user = await signInWithEmailAndPassword(
+      auth,
+      email,
+      pass
+      );
+      console.log(user)
+    }catch (error){
+      console.log(error);
+    }
+  };
+  const logout = async () => {
+    await signOut(auth);
+  };
 
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
@@ -30,12 +48,13 @@ export const Login = (props: { onFormSwitch: (arg0: string) => void; }) => {
       <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder='youremail@gmail.com' id='email' name='email' />
       <label htmlFor="password">Password</label>
       <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder='********' id='password' name='password' />
-      <button className='formbtn' type='submit'>Login</button>
+      <button className='formbtn' type='submit' onClick={login}>Login</button>
     </fieldset>
     </form>
     <button className='formbtn' onClick={() => props.onFormSwitch('register')}>Don't have an account? Register here</button>
+    <button className='formbtn' onClick={logout} >Log out</button>
     </div>
   );
 };
 
-export default Login;
+export default Login; 
