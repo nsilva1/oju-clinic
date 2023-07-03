@@ -22,7 +22,7 @@ export const Register = (props: { onFormSwitch: (arg0: string) => void; }) => {
       );
 
       const { user } = userCredential;
-      // Use the collection() method directly from the imported module
+     
       await setDoc(doc(collection(firestore, 'users'), user.uid), {
         fullName: name,
         phoneNumber: phoneNumber,
@@ -40,7 +40,7 @@ export const Register = (props: { onFormSwitch: (arg0: string) => void; }) => {
 
     try {
       console.log('Registering user...');
-      // Simulate a delay for demonstration purposes
+      
       await new Promise((resolve) => setTimeout(resolve, 2000));
       console.log('User registered successfully!');
     } catch (error) {
