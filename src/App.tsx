@@ -4,6 +4,7 @@ import NavBar from './components/common/NavBar';
 import Home from './components/pages/home/Home';
 import Footer from './components/common/Footer';
 import { AuthForm } from './components/pages/auth/AuthForm';
+import BookingForm from './components/pages/booking/BookingForm';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/form' element={<AuthForm />} />
+        <Route path='/booking-form' element={<BookingForm />} />
       </Routes>
       <Footer />
     </BrowserRouter>
